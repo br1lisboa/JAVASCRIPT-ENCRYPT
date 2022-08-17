@@ -60,14 +60,14 @@ function desencriptar() {
 }
 
 function copiar() {
-    var mensajeEncriptado = inputResultado.value
+    let mensajeEncriptado = inputResultado.value
     navigator.clipboard.writeText(mensajeEncriptado)
     inputMensaje.value = ""
     inputMensaje.focus()
 }
 
 function escuchar() {
-    var mensajeEncriptado = inputResultado.value;
+    let mensajeEncriptado = inputResultado.value;
     let msg = new SpeechSynthesisUtterance();
     msg.text = mensajeEncriptado;
     msg.lang = "es-ES";
